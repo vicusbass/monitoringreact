@@ -22,3 +22,5 @@ kadira:flow-router
 kadira:react-layout
 react
 react-template-helper
+percolate:synced-cron
+http
