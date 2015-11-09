@@ -1,8 +1,8 @@
 FlowRouter.route("/",{
 	name: "Home",
-	action(params) {
+	action() {
 		// ReactLayout.render(Home);
-		renderMainLayoutWith(<Home />);
+		renderMainLayoutWith(<Table />);
 	}
 });
 
