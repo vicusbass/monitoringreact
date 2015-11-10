@@ -3,12 +3,24 @@ body {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.push {
+    height: 60px; /* .push must be the same height as .footer */
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .container .text-muted {

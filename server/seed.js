@@ -4,7 +4,8 @@ if (Results.find().count()===0){
         status: "PASS",
         service: "PartnerAPI",
         path: "/auth/getCode",
-        errorMessage: "",
+        content: "",
+        contentType: "string",
         createdAt: new Date()
     });
     Results.insert({
@@ -12,7 +13,8 @@ if (Results.find().count()===0){
         status: "FAIL",
         service: "PartnerAPI",
         path: "/auth/getToken",
-        errorMessage: "This is too much for me to handle",
+        content: "This is too much for me to handle",
+        contentType: "string",
         createdAt: new Date()
     });
     Results.insert({
@@ -20,7 +22,8 @@ if (Results.find().count()===0){
         status: "FAIL",
         service: "PartnerAPI",
         path: "/auth/getToken/ourFriend",
-        errorMessage: "Bad auth",
+        content: "Bad auth",
+        contentType: "string",
         createdAt: new Date()
     });
     Results.insert({
@@ -28,7 +31,8 @@ if (Results.find().count()===0){
         status: "PASS",
         service: "InstitutionAPI",
         path: "/institution/getId",
-        errorMessage: "",
+        content: "",
+        contentType: "string",
         createdAt: new Date()
     });
     Results.insert({
@@ -36,7 +40,8 @@ if (Results.find().count()===0){
         status: "FAIL",
         service: "InstitutionAPI",
         path: "/institution/getDistrict",
-        errorMessage: "{auth: false}",
+        content: "{auth: false}",
+        contentType: "json",
         createdAt: new Date()
     });
 }

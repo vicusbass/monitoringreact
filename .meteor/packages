@@ -24,3 +24,5 @@ react
 react-template-helper
 percolate:synced-cron
 http
+jparker:crypto-sha256
+jparker:crypto-base64

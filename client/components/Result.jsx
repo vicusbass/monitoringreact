@@ -7,7 +7,7 @@ Result = React.createClass({
 
     handleClick: function (event) {
         event.preventDefault();
-        React.render(<Modal error={this.props.result.errorMessage}/>, document.getElementById("modalReact"));
+        React.render(<Modal content={this.props.result.content} contentType={this.props.result.contentType}/>, document.getElementById("modalReact"));
     },
 
     render() {
