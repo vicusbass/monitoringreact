@@ -1,3 +1,5 @@
+//sticky footer
+
 Footer = React.createClass({
 	render() {
 	 return(

@@ -1,3 +1,7 @@
+//TODO This is just a hardcoded test, the endpoints entries will be refactored to remove code duplication
+//eventually most of the calls will be moved to separate classes and some will be generated 
+//from MongoDB entries, dinamically
+
 function addApiKeyAuth(obj, partnerId, secretKey) {
     var pId = encodeURIComponent(partnerId);
     var secretKey = encodeURIComponent(secretKey);
@@ -28,6 +32,9 @@ var secretKey = "knoDD54";
 var createAccount = {
     name: 'CreateAccount',
     schedule: function(parser) {
+        //Scheduling in human language, if we want to have the calls running each 30 minutes, we use:
+        // return parser.text('every 30 minutes');
+        //TODO remove hardcoding
         return parser.text('every 600 minutes');
     },
     job: function() {
@@ -73,7 +80,9 @@ SyncedCron.add(createAccount);
 SyncedCron.add({
     name: 'getSubOrganizations',
     schedule: function(parser) {
-        // parser is a later.parse object
+        //Scheduling in human language, if we want to have the calls running each 30 minutes, we use:
+        // return parser.text('every 30 minutes');
+        //TODO remove hardcoding
         return parser.text('every 600 minutes');
     },
     job: function() {

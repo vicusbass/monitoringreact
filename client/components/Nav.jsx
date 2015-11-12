@@ -1,3 +1,4 @@
+//static element, representing the Navigation bar
 Nav = React.createClass({
     render() {
         return (

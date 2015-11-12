@@ -1,7 +1,9 @@
+//TODO fix issue with the first click not working
+//represents an entry in the table, basically the details of one API call response
+
 Result = React.createClass({
     propTypes: {
-        // This component gets the task to display through a React prop.
-        // We can use propTypes to indicate it is required
+        // This component gets the result entry to display through a React prop.
         result: React.PropTypes.object.isRequired
     },
 

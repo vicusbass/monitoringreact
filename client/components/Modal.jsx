@@ -1,3 +1,5 @@
+//A bootstrap modal component displayed when clicking a Status Code, contains a formatted json or a string
+
 Modal = React.createClass({
     beautifyContent: function(){
         return this.props.contentType == "json" ? JSON.stringify(this.props.content, null, 2) : this.props.content;

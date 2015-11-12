@@ -1,3 +1,6 @@
+//TODO fix issue with the first click not working
+//Need to display only the latest results, at the moment everything is displayed
+
 Table = React.createClass({
     mixins: [ReactMeteorData],
 

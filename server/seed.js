@@ -1,3 +1,5 @@
+//adding some test data
+
 if (Results.find().count()===0){
     Results.insert({
         responseCode: 200,
